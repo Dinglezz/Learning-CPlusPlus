@@ -1,15 +1,25 @@
 #include <iostream>
 
 int main() {
-    int players = 5;
-    int result = players / 2;
-    std::cout << "The result is " <<  result << "\n";
+    // Title
+    std::cout << "-----------------Da Adder-----------------" << "\n";
+    std::cout << "Hey there partner!" << '\n';
 
-    int correct = 444;
-    int questions = 777;
-    int score = correct/(double) questions * 100;
-    std::cout << "Also your test score came back!" << "\n";
-    std::cout << "It's " << score << "%";
+    // First Number
+    int firstNumber;
+    std::cout << "Please insert your first number: ";
+    std::cin >> firstNumber;
+
+    // Second Number
+    int secondNumber;
+    std::cout << "Please insert your second number: ";
+    std::cin >> secondNumber;
+
+    // Result
+    int result = firstNumber + secondNumber;
+    std::cout << firstNumber << " + " << secondNumber << " = " << result << '\n';
+
+    std::cout << "------------------------------------------" << "\n";
 
     return 0;
 }
