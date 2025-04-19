@@ -1,18 +1,11 @@
 #include <iostream>
 
 int main() {
-    // Variables
-    int x = 2432410;
-    int y = 14145;
-    int sum = x + y;
+    const double pie = 3.14159;
+    double radius = 10;
+    double circumference = 2 * pie * radius;
 
-    std::string stringy = "I'm a string!";
-
-    // Printing
-    std::cout << "X: " << x << "\n";
-    std::cout << "Y: " << y << "\n";
-    std::cout << "Sum: " << sum << "\n";
-    std::cout << stringy;
+    std::cout << circumference << " cm";
 
     return 0;
 }
