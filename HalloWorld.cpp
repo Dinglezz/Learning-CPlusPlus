@@ -1,11 +1,22 @@
 #include <iostream>
 
-int main() {
-    const double pie = 3.14159;
-    double radius = 10;
-    double circumference = 2 * pie * radius;
+using string = std::string; 
 
-    std::cout << circumference << " cm";
+namespace dingleCat {
+    string cat = "Dingle";
+}
+namespace AlexDog {
+    string dog = "Alex";
+}
+
+int main() {
+    using std::cout;
+    using namespace AlexDog;
+
+    string cat = "Pringle";
+
+    cout << "My cat's name is " << dingleCat::cat << "\n";
+    cout << "My dogs's name is " << dog;
 
     return 0;
 }
