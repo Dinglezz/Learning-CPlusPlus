@@ -1,22 +1,15 @@
 #include <iostream>
 
-using string = std::string; 
-
-namespace dingleCat {
-    string cat = "Dingle";
-}
-namespace AlexDog {
-    string dog = "Alex";
-}
-
 int main() {
-    using std::cout;
-    using namespace AlexDog;
+    int players = 5;
+    int result = players / 2;
+    std::cout << "The result is " <<  result << "\n";
 
-    string cat = "Pringle";
-
-    cout << "My cat's name is " << dingleCat::cat << "\n";
-    cout << "My dogs's name is " << dog;
+    int correct = 444;
+    int questions = 777;
+    int score = correct/(double) questions * 100;
+    std::cout << "Also your test score came back!" << "\n";
+    std::cout << "It's " << score << "%";
 
     return 0;
 }
