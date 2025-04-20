@@ -1,25 +1,28 @@
 #include <iostream>
+#include <cmath>
 
 int main() {
     // Title
-    std::cout << "-----------------Da Adder-----------------" << "\n";
+    std::cout << "\n" << "-----------Hypotenuse Calculator-----------" << "\n";
     std::cout << "Hey there partner!" << '\n';
 
-    // First Number
-    int firstNumber;
-    std::cout << "Please insert your first number: ";
-    std::cin >> firstNumber;
+    // Side A
+    double a;
+    std::cout << "Please enter side A: ";
+    std::cin >> a;
 
-    // Second Number
-    int secondNumber;
-    std::cout << "Please insert your second number: ";
-    std::cin >> secondNumber;
+    // Side B
+    double b;
+    std::cout << "Please enter side B: ";
+    std::cin >> b;
 
-    // Result
-    int result = firstNumber + secondNumber;
-    std::cout << firstNumber << " + " << secondNumber << " = " << result << '\n';
+    // Side C (Result)
+    a = pow(a, 2);
+    b = pow(b, 2);
+    double c = sqrt(a + b);
+    std::cout << "Side C is " << c << '\n';
 
-    std::cout << "------------------------------------------" << "\n";
+    std::cout << "-------------------------------------------" << "\n";
 
     return 0;
 }
